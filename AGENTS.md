@@ -5,6 +5,27 @@
 - Always use Context7 MCP when library/API documentation, code generation, setup, or configuration steps are needed, without requiring me to ask explicitly.
 - Whenever you exit Plan mode, always save the plan to `./docs/<feature-name>/plan-<feature-name>.md`.
 - While implementing, keep the markdown plan file updated with completed progress and any plan changes.
+- At the end of every session, if the agent made mistakes or learned a reusable technique, append a short entry to `AGENTS.md` under `## Common Errors & Learnings`.
+- Keep each learning entry concise and actionable: include `Date`, `Issue/Learning`, `Root Cause`, and `Prevention Rule`.
+- New entries must be appended (do not overwrite older entries) so `AGENTS.md` remains a living document.
+
+## File Index
+
+- `AGENTS.md` - Agent working rules and session-level learnings.
+- `README.md` - Project overview and getting-started notes.
+- `.agents/README-codex.md` - Codex-specific agent guidance for this repo.
+- `.github/README-copilot.md` - Copilot-oriented workflow notes.
+- `./docs/<feature-name>/plan-<feature-name>.md` - Current feature plan and progress log (create/update when working in Plan mode).
+- `skills/<skill-name>/SKILL.md` - Skill-specific workflow and checklists (if present).
+
+## Common Errors & Learnings
+
+<!-- Append new session learnings below this line using this format:
+- Date: YYYY-MM-DD
+  Issue/Learning: <what went wrong or what new technique worked>
+  Root Cause: <why it happened>
+  Prevention Rule: <clear rule for future agents>
+-->
 
 ## Project Overview
 
