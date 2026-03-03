@@ -14,7 +14,9 @@ AI-assisted coding tools and workflows.
    Example:
    - https://context7.com/skills/wshobson/agents/dotnet-backend-patterns
 
-3. Install the Context7 MCP server from the VS Code Extensions marketplace.
+3. MCP Server
+   * Install the Context7 MCP server from the VS Code Extensions marketplace.
+   * Install Microsoft Learn MCP server from the VS Code Extensions marketplace.
 
 ### Development
 
