@@ -22,8 +22,6 @@
 
 - `AGENTS.md` - Agent working rules and session-level learnings.
 - `README.md` - Project overview and getting-started notes.
-- `.agents/README-codex.md` - Codex-specific agent guidance for this repo.
-- `.github/README-copilot.md` - Copilot-oriented workflow notes.
 - `./docs/<feature-name>/plan-<feature-name>.md` - Current feature plan and progress log (create/update when working in Plan mode).
 - `skills/<skill-name>/SKILL.md` - Skill-specific workflow and checklists (if present).
 
