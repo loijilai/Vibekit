@@ -9,14 +9,10 @@ AI-assisted coding tools and workflows.
 ### Setup
 
 1. Clone this repo, then copy `.agents` and `.github` into your project folder.
-2. Browse skills at https://context7.com/skills.
-
-   Example:
-   - https://context7.com/skills/wshobson/agents/dotnet-backend-patterns
-
+2. Browse skills at https://skills.sh/
 3. MCP Server
    - Install the Context7 MCP server
-   - Install Microsoft Learn MCP server (https://github.com/MicrosoftDocs/mcp?tab=readme-ov-file)
+   - Install [Microsoft Learn MCP server](https://github.com/MicrosoftDocs/mcp?tab=readme-ov-file)
 
 ### Development
 
