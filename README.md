@@ -9,14 +9,10 @@ AI-assisted coding tools and workflows.
 ### Setup
 
 1. Clone this repo, then copy `.agents` and `.github` into your project folder.
-2. Browse skills at https://context7.com/skills.
-
-   Example:
-   - https://context7.com/skills/wshobson/agents/dotnet-backend-patterns
-
+2. Browse skills at https://skills.sh/
 3. MCP Server
-   * Install the Context7 MCP server
-   * Install Microsoft Learn MCP server (https://github.com/MicrosoftDocs/mcp?tab=readme-ov-file)
+   - Install the Context7 MCP server
+   - Install [Microsoft Learn MCP server](https://github.com/MicrosoftDocs/mcp?tab=readme-ov-file)
 
 ### Development
 
@@ -46,17 +42,19 @@ study the notification system in great details, understand the intricacies of it
 I want to build a new feature <name and description> that extends the system to perform <business outcome>. write a detailed plan.md document outlining how to implement this. include code snippets
 ```
 
-Annotation Cycle: 
+Annotation Cycle:
+
 ```
 I added a few notes to the document, address all the notes and update the document accordingly. don’t implement yet
 ```
 
 Todo List:
+
 ```
 add a detailed todo list to the plan, with all the phases and individual tasks necessary to complete the plan - don’t implement yet
 ```
 
-#### Phase 3.  Implement
+#### Phase 3. Implement
 
 ```
 implement it all. when you’re done with a task or phase, mark it as completed in the plan document. do not stop until all tasks and phases are completed.
