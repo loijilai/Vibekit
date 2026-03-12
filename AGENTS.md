@@ -1,8 +1,9 @@
-## 🚨 CRITICAL RULES
+## CRITICAL RULES
 
 ### Coding Conventions
 - Avoid excessive logging. Only log at important decision points or when errors occur.
 - Do not use `goto`; follow SOLID principles.
+- Files should be opened and saved using UTF-8 encoding
 
 ### MCP Servers
 - Always use Context7 MCP when library/API documentation, code generation, setup, or configuration steps are needed, without requiring me to ask explicitly.
