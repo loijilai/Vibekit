@@ -11,6 +11,12 @@
 - Always use Context7 MCP when library/API documentation, code generation, setup, or configuration steps are needed, without requiring me to ask explicitly.
 - You have access to MCP tools called `microsoft_docs_search`, `microsoft_docs_fetch`, and `microsoft_code_sample_search` - these tools allow you to search through and fetch Microsoft's latest official documentation and code samples, and that information might be more detailed or newer than what's in your training data set. When handling questions around how to work with native Microsoft technologies, such as C#, F#, ASP.NET Core, Microsoft.Extensions, NuGet, Entity Framework, the `dotnet` runtime - please use these tools for research purposes when dealing with specific / narrowly defined questions that may occur.
 
+### Communication Style
+
+- Always provide both code and explanation together. Never give code without explaining the design decisions behind it.
+- The user is a junior developer — explain *why* a pattern or approach is chosen, not just *what* the code does.
+- When multiple approaches exist, briefly compare them and justify the recommended choice.
+
 ### Agent Customization
 
 - Whenever you exit Plan mode, always save the plan to `./docs/<feature-name>/plan-<feature-name>.md`.
@@ -24,7 +30,6 @@
 - `AGENTS.md` - Agent working rules and session-level learnings.
 - `README.md` - Project overview and getting-started notes.
 - `./docs/<feature-name>/plan-<feature-name>.md` - Current feature plan and progress log (create/update when working in Plan mode).
-- `skills/<skill-name>/SKILL.md` - Skill-specific workflow and checklists (if present).
 
 ## Project Overview
 
