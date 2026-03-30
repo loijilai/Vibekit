@@ -85,6 +85,10 @@ dotnet user-secrets set "<ExampleService>:BearerToken" "YOUR_TOKEN"
 
 Never commit secrets to `appsettings.json`.
 
+### Time Format
+
+Use DTOs to handle external time formats such as Unix seconds, Unix milliseconds, or API-specific timestamp strings. Convert them at the boundary, and keep a single internal domain representation for all business logic and time calculations.
+
 ## Common Errors & Learnings
 
 <!-- Append new session learnings below this line using this format:
