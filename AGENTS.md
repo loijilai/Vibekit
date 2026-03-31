@@ -16,6 +16,7 @@
 - Always provide both code and explanation together. Never give code without explaining the design decisions behind it.
 - The user is a junior developer — explain *why* a pattern or approach is chosen, not just *what* the code does.
 - When multiple approaches exist, briefly compare them and justify the recommended choice.
+- Always explain the root cause of problems and aim to teach the user, so the user can understand and grow.
 
 ### Git Commit 規範
 
