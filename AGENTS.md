@@ -5,6 +5,15 @@
 - Avoid excessive logging. Only log at important decision points or when errors occur.
 - Do not use `goto`; follow SOLID principles.
 - Files should be opened and saved using UTF-8 encoding
+- **If statements must always use braces**: Use `if (condition) { statement; }` instead of `if (condition) statement;` — braces are mandatory for all if statements to improve readability and prevent subtle bugs
+- **Configuration must use Options Pattern**: Always use `AddOptions<T>()` with `.Bind()`, `.ValidateDataAnnotations()`, and `.ValidateOnStart()` for configuration binding. Example:
+  ```csharp
+  builder.Services.AddOptions<KeyOptions>()
+      .Bind(builder.Configuration.GetSection(KeyOptions.Key))
+      .ValidateDataAnnotations()
+      .ValidateOnStart();
+  ```
+  This ensures type-safe configuration, validation at startup, and prevents runtime configuration errors
 
 ### MCP Servers
 
