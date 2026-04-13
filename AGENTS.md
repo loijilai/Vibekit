@@ -6,6 +6,8 @@
 - Do not use `goto`; follow SOLID principles.
 - Files should be opened and saved using UTF-8 encoding
 - **If statements must always use braces**: Use `if (condition) { statement; }` instead of `if (condition) statement;` — braces are mandatory for all if statements to improve readability and prevent subtle bugs
+- **Controllers must stay thin**: Controllers are only responsible for receiving requests, validating boundary input, and passing work to services. Do not place business logic in controllers, and avoid controller-internal concerns such as detailed logging, `Stopwatch` timing, or workflow orchestration unless there is a clear framework-level requirement. Move business logic to the service layer to keep controllers lightweight and make behavior easier to test.
+- **API endpoints should follow minimal API style**: Prefer minimal API endpoint handlers over heavy controller patterns. Endpoint handlers must stay thin, only handle request binding and delegation to services, and should not hide behavior behind a generic `IResult` alone. Declare the full set of possible HTTP response types in the handler signature and return concrete responses with `TypedResults` so the API contract stays explicit, strongly typed, and understandable by tooling such as OpenAPI generators.
 - **Configuration must use Options Pattern**: Always use `AddOptions<T>()` with `.Bind()`, `.ValidateDataAnnotations()`, and `.ValidateOnStart()` for configuration binding. Example:
   ```csharp
   builder.Services.AddOptions<KeyOptions>()
